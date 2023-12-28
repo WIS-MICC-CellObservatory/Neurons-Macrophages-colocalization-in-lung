@@ -12,11 +12,9 @@ The Fiji macro orchestrating all these steps is available at the [Fiji folder](.
 To prepare the images used for training the Ilastik model we first "cleaned" the blue channel image: As both the Blue channel (neurons) and the Green channel (macrophages originated from DMP monocytes) show lung autofluorescence, we usde the green channel to clean the Blue channel by subtracting it twice:
 <p align="center">Blue_ autofluorescence = Blue – 2*Green</p>
 We then took the max intensity projection of the manipulated Z-stack and used that to train the Ilastik model (avalable at [Ilastik folder](../../tree/main/Ilastik).
-<p align="center">
-  .
+
 ![Neurons](https://github.com/WIS-MICC-CellObservatory/Neurons-Macrophags-colcalization-in-lung/assets/64706090/2f20a55e-e50b-4959-a9a9-a5e466d96f69)
-  .
-</p>
+
 The Ilastik version used to train and run the models is 1.3.3post3
 ## Cells/Macrophages segmentation
 We used out-of-the-box Cellpose’s “cyto2” model to identify cells: We used cell diameter = 20pixels for identifying the GMP originated cells and macrophages, and cell diameter = 10pixels for identifying the MDP macrophages.
