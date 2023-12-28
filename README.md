@@ -13,7 +13,9 @@ To prepare the images used for training the Ilastik model we first "cleaned" the
 <p align="center">Blue_ autofluorescence = Blue – 2*Green</p>
 We then took the max intensity projection of the manipulated Z-stack and used that to train the Ilastik model (avalable at [Ilastik folder](../../tree/main/Ilastik).
 <p align="center">
+  .
 ![Neurons](https://github.com/WIS-MICC-CellObservatory/Neurons-Macrophags-colcalization-in-lung/assets/64706090/2f20a55e-e50b-4959-a9a9-a5e466d96f69)
+  .
 </p>
 The Ilastik version used to train and run the models is 1.3.3post3
 ## Cells/Macrophages segmentation
