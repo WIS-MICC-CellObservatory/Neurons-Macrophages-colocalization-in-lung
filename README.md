@@ -21,10 +21,11 @@ We used out-of-the-box Cellpose’s “cyto2” model to identify cells: We used
 
 ![Macrophages](https://github.com/WIS-MICC-CellObservatory/Neurons-Macrophags-colcalization-in-lung/assets/64706090/ba562be6-c9dd-4514-b874-25dfa0aa6ec9)
 
-![Distance map](https://github.com/WIS-MICC-CellObservatory/Neurons-Macrophags-colcalization-in-lung/assets/64706090/439ee7b8-2b10-4c9a-916e-6b8c3f42b97b)
 
 ## Distance analysis
 As the Ilastile model also capture small fractions of neurons, before generating Fiji's distance transform, we removed small identified neuron fregments (trying both 100 microns^2 and 200 microns^2). 
+
+![Distance map](https://github.com/WIS-MICC-CellObservatory/Neurons-Macrophags-colcalization-in-lung/assets/64706090/439ee7b8-2b10-4c9a-916e-6b8c3f42b97b)
 
 ## GMD MDP overlap 
 For each two identified cells of different types (i.e., GMD and DMP) that overlap, the level of overlap is given by:
