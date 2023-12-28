@@ -10,7 +10,9 @@ The Fiji macro orchestrating all these steps is available at the [Fiji folder](.
 
 ## Neuron segmentation
 To prepare the images used for training the Ilastik model we first "cleaned" the blue channel image: As both the Blue channel (neurons) and the Green channel (macrophages originated from DMP monocytes) show lung autofluorescence, we usde the green channel to clean the Blue channel by subtracting it twice:
-<p align="center">Blue_ autofluorescence = Blue – 2*Green</p>
+<p align="center">
+Blue_ autofluorescence = Blue – 2*Green
+</p>
 We then took the max intensity projection of the manipulated Z-stack and used that to train the Ilastik model (avalable at [Ilastik folder](../../tree/main/Ilastik).
 
 ![Neurons](https://github.com/WIS-MICC-CellObservatory/Neurons-Macrophags-colcalization-in-lung/assets/64706090/2f20a55e-e50b-4959-a9a9-a5e466d96f69)
@@ -29,5 +31,7 @@ As the Ilastile model also capture small fractions of neurons, before generating
 
 ## GMD MDP overlap 
 For each two identified cells of different types (i.e., GMD and DMP) that overlap, the level of overlap is given by:
-<p align="center">([CELL]∩[CELL of OTHER TYPE] area)/Min([CELL] area ,[CELL of OTHER TYPE] area)</p> 
+<p align="center">
+([CELL]∩[CELL of OTHER TYPE] area)/Min([CELL] area ,[CELL of OTHER TYPE] area)
+</p> 
 
