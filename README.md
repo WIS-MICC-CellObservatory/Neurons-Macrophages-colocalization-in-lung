@@ -31,7 +31,7 @@ As the Ilastile model also capture small fractions of neurons, before generating
 
 ## GMD MDP overlap 
 For each two identified cells of different types (i.e., GMD and DMP) that overlap, the level of overlap is given by:
-<p align="center">
-([CELL]∩[CELL of OTHER TYPE] area)/Min([CELL] area ,[CELL of OTHER TYPE] area)
-</p> 
+
+    ([CELL]∩[CELL of OTHER TYPE] area)/Min([CELL] area ,[CELL of OTHER TYPE] area)
+
 
